@@ -6,7 +6,7 @@ mafMutationCounter requires that the user has already used gdc-client to downloa
 
 # Installation
 ```
-git clone __
+git clone https://github.com/smoorsh/mafMutationCounter.git
 ```
 
 # Run the Program
