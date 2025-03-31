@@ -1,4 +1,6 @@
-### identifying gene mutations in cancer
+### identifying gene mutations in cancer ###
+
+## Libraries
 import os
 import gzip
 import shutil
@@ -7,10 +9,11 @@ import pandas as pd
 import numpy as np
 import sys
 
-### User defined input
+### User defined input ###
 parent_dir = sys.argv[1]
 gene = sys.argv[2]
-# input format: 'python maf-gdc.py PathToDirectory GeneOfInterest'
+
+### input format: 'python maf-gdc.py PathToDirectory GeneOfInterest' ###
 
 ## move all of the .maf files up one directory and decompress them
 subdirs = [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]
